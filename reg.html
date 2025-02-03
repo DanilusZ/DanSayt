@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <body> 
-  <div class='blockReg'>
-    <center>
+  <center>
+    <div class='blockReg'>
       <br>
       <b>Регистрация</b>
-    </center>
-  </div>
+    </div>
+  </center>
   <center>
     <br>
     <b>
       Ваш username<br>
-      <input type='text'></input>
+      <input type='text'></input><button onclick='yes1()'></button>
       <br><br>Пароль<br>
-      <input type='password'></input>
+      <input type='password'></input><button onclick='yes2()'></button>
       <br>Подтвердите<br>
-      <input type='password'></input>
+      <input type='password'></input><button onclick='yes3()'></button>
     </b>
   </center>
+  <script>
+    globalThis.username = null
+    globalThis.password = null
+    globalThis.yesPassword = null
+  </script>
   <style>
     body{
       font-family: 'Arial';
