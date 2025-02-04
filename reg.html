@@ -10,11 +10,14 @@
     <br>
     <b>
       Ваш username<br>
-      <input type='text'></input><button onclick='yes1()'></button>
+      <input type='text'></input>
+      <br><p class='hint'>Username - это Ваш ник-нэйм</p>
       <br><br>Пароль<br>
-      <input type='password'></input><button onclick='yes2()'></button>
+      <input type='password'></input>
+      <br><p class='hint'>Пароль нужен для Вашей безопасности</p>
       <br>Подтвердите<br>
-      <input type='password'></input><button onclick='yes3()'></button>
+      <input type='password'></input>
+      <br><p class='hint'>Проверяю, запомнили вы пароль</p>
     </b>
   </center>
   <script>
@@ -31,6 +34,15 @@
       color: white;
       font-family: 'Arial';
       height: 50px;
+    }
+    .red{
+      color: red;
+    }
+    .green{
+      color: green;
+    }
+    .hint{
+      color: #c0c0c0;
     }
   </style>
 </body>
