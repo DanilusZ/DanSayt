@@ -8,22 +8,35 @@
   </center>
   <center>
     <br>
-    <b>
-      Ваш username<br>
-      <input type='text'></input>
-      <br><p class='hint'>Username - это Ваш ник-нэйм</p>
-      <br><br>Пароль<br>
-      <input type='password'></input>
-      <br><p class='hint'>Пароль нужен для Вашей безопасности</p>
-      <br>Подтвердите<br>
-      <input type='password'></input>
-      <br><p class='hint'>Проверяю, запомнили вы пароль</p>
-    </b>
+    <form action="#" method="#" id="user">
+      <b>
+        Ваш username<br>
+        <input type='text' name='username'></input>
+        <br><p class='hint'>Username - это Ваш ник-нэйм</p>
+        <br><br>Пароль<br>
+        <input type='password' name='password'></input>
+        <br><p class='hint'>Пароль нужен для Вашей безопасности</p>
+        <br>Подтвердите<br>
+        <input type='password' name='Yespassword'></input>
+        <br><p class='hint'>Проверяю, запомнили вы пароль</p>
+        <button type="submit">Готово</button>
+      </b>
+    </form>
   </center>
   <script>
-    globalThis.username = null
-    globalThis.password = null
-    globalThis.yesPassword = null
+    const user = document.getElementById('user');
+    user.addEventListener('submit', ClickYes);
+    function ClickYes(event) {
+      event.preventDefault();
+    const username = user.querySelector('[name="name"]'),
+      password = user.querySelector('[name="password"]'),
+      Yespassword = user.querySelector('[name="Yespassword"]');
+    const data = {
+      username: username.value,
+      password: password.value,
+      Yespassword: Yespassword.value
+    }
+    console.log(data);
   </script>
   <style>
     body{
