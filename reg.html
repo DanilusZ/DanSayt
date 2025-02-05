@@ -14,10 +14,10 @@
         <input type='text' name='username'></input>
         <br><p class='hint'>Username - это Ваш ник-нэйм</p>
         <br><br>Пароль<br>
-        <input type='password' name='password'></input>
+        <input type='text' name='password'></input>
         <br><p class='hint'>Пароль нужен для Вашей безопасности</p>
         <br>Подтвердите<br>
-        <input type='password' name='yespassword'></input>
+        <input type='text' name='yespassword'></input>
         <br><p class='hint'>Проверяю, запомнили вы пароль</p>
         <button type="submit">Готово</button>
       </b>
@@ -32,7 +32,7 @@
     const username = user.querySelector('[name="name"]'),
       password = user.querySelector('[name="password"]'),
       yespassword = user.querySelector('[name="yespassword"]');
-    const data = {username: username.value, password: password, yespassword: yespassword}
+    const data = {username: username.value, password: password.value, yespassword: yespassword.value}
     console.log(data);
   </script>
   <style>
